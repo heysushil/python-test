@@ -109,6 +109,36 @@ s = 'hello 34 sushil 45 how 55'
 result = re.findall(p,s)
 print(result)
 
+'''
+re.split()
+The re.split method splits the string where there is a match and returns a list of strings where the splits have occurred.
 
+'''
 
+string = 'Twelve:12 Eighty nine:89.'
+pattern = '\d+'
 
+result = re.split(pattern, string)
+print(result)
+
+# Output: ['Twelve:', ' Eighty nine:', '.']
+
+'''
+You can pass maxsplit argument to the re.split() method. It's the maximum number of splits that will occur.
+'''
+
+string = 'Twelve:12 Eighty nine:89 Nine:9.'
+pattern = '\d+'
+
+# maxsplit = 1
+# split only at the first occurrence
+result = re.split(pattern, string, 1)
+print(result)
+
+# Output: ['Twelve:', ' Eighty nine:89 Nine:9.']
+# By the way, the default value of maxsplit is 0
+# meaning all possible splits.
+
+# ----------------------------------------------
+# In vs code after adding re. get all sujessions on list which helps to understand the related sub functions on it
+# ----------------------------------------------
