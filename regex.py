@@ -67,7 +67,31 @@ If you are unsure if a character has special meaning or not, you can put \ in fr
 
 '''
 ----------------Special Sequences--------------------------
+Special sequences make commonly used patterns easier to write. Here's a list of special sequences:
 
+\A - Matches if the specified characters are at the start of a string.
+
+\b - Matches if the specified characters are at the beginning or end of a word.
+
+\B - Opposite of \b. Matches if the specified characters are not at the beginning or end of a word.
+
+\d - Matches any decimal digit. Equivalent to [0-9]
+
+\D - Matches any non-decimal digit. Equivalent to [^0-9]
+
+\s - Matches where a string contains any whitespace character. Equivalent to [ \t\n\r\f\v].
+
+\S - Matches where a string contains any non-whitespace character. Equivalent to [^ \t\n\r\f\v].
+
+\w - Matches any alphanumeric character (digits and alphabets). Equivalent to [a-zA-Z0-9_]. By the way, underscore _ is also considered an alphanumeric character.
+
+\W - Matches any non-alphanumeric character. Equivalent to [^a-zA-Z0-9_]
+
+\Z - Matches if the specified characters are at the end of a string.
+
+Tip: To build and test regular expressions, you can use RegEx tester tools such as regex101. This tool not only helps you in creating regular expressions, but it also helps you learn it.
+
+Now you understand the basics of RegEx, let's discuss how to use RegEx in your Python code.
 '''
 import re
 pattern = '^a...s$'
@@ -78,3 +102,13 @@ if result:
     print('Pattern matched')
 else:
     print('Pattern not matched')
+
+# use findall
+p = '\d+'
+s = 'hello 34 sushil 45 how 55'
+result = re.findall(p,s)
+print(result)
+
+
+
+
