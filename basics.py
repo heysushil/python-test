@@ -6,7 +6,7 @@ name = 'chaudhary'
 print(name)
 name = 'sushil'
 print(name)
-
+print
 a = 5
 print(a, "is type of", type(a))
 a = 5.0
