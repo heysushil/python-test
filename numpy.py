@@ -1,5 +1,5 @@
 import numpy
 
-arr = numpy
+arr = numpy.array(['hello'])
 
 print(arr)

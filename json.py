@@ -9,5 +9,5 @@ y = simplejson.loads(x)
 # the result is a Python dictionary:
 print(y["age"])
 
-print('Hello hi how are you',sep="/")
-raise 
+print('Hello hi how are you')
+# raise 
