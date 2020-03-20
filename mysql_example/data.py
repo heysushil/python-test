@@ -16,3 +16,9 @@ mycursor.execute('CREATE TABLE IF NOT EXISTS user(id int(10) NOT NULL AUTO_INCRE
 
 # for x in mycursor:
 #     print(x)
+# query = 'INSERT INTO user(name) VALUES("Sushil")';
+name = [('Himanshu'),('Muskan'),('Saini'),('Sanjay'),('Gaurav')]
+mycursor.executemany('INSERT INTO user(name) VALUES("%s")', (name))
+mydb.commit()
+print(mycursor.rowcount, "Recored inserted")
+# mydb.close()

@@ -1,5 +1,6 @@
-import numpy
+import re
 
-# arr = numpy.array([1, 2, 3, 4, 5])
+s = "Replaces one or many matches with a string orajskhdfklorljsdhflorjksdhfklaorjasdfklorjsdfhlkor"
 
-# print(arr)
+print(re.split("or",s))
+
